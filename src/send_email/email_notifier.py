@@ -21,7 +21,7 @@ def send_email(body, EMAIL_RECEIVER, EMAIL_TITLE, timeoffset):
 
         # 配置邮件参数
         data = {
-            "from": f"LifeSync-AI <mailgun@sandbox22e9a53242634811975ad167d530a727.mailgun.org>",
+            "from": f"LifeSync-AI <mailgun@sandboxd66891b27aaa47de935c5c43165f5f71.mailgun.org>",
             "to": [EMAIL_RECEIVER],
             "subject": f"{EMAIL_TITLE} {custom_date}",
             "html": cleaned_body
@@ -29,7 +29,7 @@ def send_email(body, EMAIL_RECEIVER, EMAIL_TITLE, timeoffset):
 
         # 发送邮件请求到 Mailgun API
         response = requests.post(
-            f"https://api.mailgun.net/v3/sandbox22e9a53242634811975ad167d530a727.mailgun.org/messages",
+            f"https://api.mailgun.net/v3/sandboxd66891b27aaa47de935c5c43165f5f71.mailgun.org/messages",
             auth=("api", MAILGUN_API_KEY),
             data=data
         )
