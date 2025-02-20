@@ -42,7 +42,7 @@ def fetch_tasks_from_notion(custom_date, USER_NOTION_TOKEN, USER_DATABASE_ID, ti
         }
 
         results = notion.databases.query(
-            database_id=USER_DATABASE_ID,
+            database_id="10f82adc58b8807697bed1fe9cf52fae",
             filter=filter_conditions
         )
         
