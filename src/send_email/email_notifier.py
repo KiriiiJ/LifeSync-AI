@@ -22,7 +22,7 @@ def send_email(body, EMAIL_RECEIVER, EMAIL_TITLE, timeoffset):
         # 配置邮件参数
         data = {
             "from": f"LifeSync-AI <mailgun@sandboxd66891b27aaa47de935c5c43165f5f71.mailgun.org>",
-            "to": [EMAIL_RECEIVER],
+            "to": "yunjie0919@outlook.com",
             "subject": f"{EMAIL_TITLE} {custom_date}",
             "html": cleaned_body
         }
