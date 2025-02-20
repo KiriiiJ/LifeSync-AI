@@ -30,7 +30,7 @@ def send_email(body, EMAIL_RECEIVER, EMAIL_TITLE, timeoffset):
         # 发送邮件请求到 Mailgun API
         response = requests.post(
             f"https://api.mailgun.net/v3/sandbox22e9a53242634811975ad167d530a727.mailgun.org/messages",
-            auth=("api", MAILGUN_API_KEY),
+            auth=("api", 931642462084806de236e5a5f96d255c-ac3d5f74-b3cf32f5),
             data=data
         )
         
