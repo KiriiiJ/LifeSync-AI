@@ -16,7 +16,7 @@ def fetch_tasks_from_notion(custom_date, USER_NOTION_TOKEN, USER_DATABASE_ID, ti
     Returns:
     - tasks: 包含不同类型任务的字典，如果某类任务为空则返回空列表而不是消息
     """
-    notion = Client(auth=USER_NOTION_TOKEN)
+    notion = Client(auth="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")
     print("\nFetching tasks from Notion...\n")
     
     try:
@@ -43,7 +43,6 @@ def fetch_tasks_from_notion(custom_date, USER_NOTION_TOKEN, USER_DATABASE_ID, ti
 
         results = notion.databases.query(
             database_id="10f82adc58b8807697bed1fe9cf52fae",
-            filter=filter_conditions
         )
         
         # 初始化任务列表
